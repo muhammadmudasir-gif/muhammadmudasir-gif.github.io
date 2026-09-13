@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Mudasir — CS Student & Builder</title>
+<meta name="description" content="Mudasir — BS Computer Science student at IIUI, building in public. Algorithm visualizer, CGPA planner, expense tracker and more." />
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%230d1117'/><text x='50' y='68' font-size='52' text-anchor='middle' fill='%2338c7ff' font-family='monospace' font-weight='bold'>&lt;/&gt;</text></svg>" />
+<style>
+  :root{
+    --bg:#0d1117; --panel:#161b22; --border:#30363d; --text:#e6edf3;
+    --muted:#8b949e; --accent:#38c7ff; --accent2:#4ade80; --mono:ui-monospace,'Cascadia Mono',Menlo,Consolas,monospace;
+  }
+  *{margin:0;padding:0;box-sizing:border-box}
+  html{scroll-behavior:smooth}
+  body{background:var(--bg);color:var(--text);font-family:-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.6}
+  .wrap{max-width:960px;margin:0 auto;padding:0 1.4rem}
+  a{color:var(--accent);text-decoration:none}
+
+  /* hero */
+  header{padding:5.5rem 0 4rem;text-align:center;position:relative}
+  .badge{font-family:var(--mono);font-size:.85rem;color:var(--accent);border:1px solid var(--border);
+    border-radius:99px;padding:.35rem .9rem;display:inline-block;margin-bottom:1.4rem}
+  h1{font-size:clamp(2.4rem,6vw,3.6rem);letter-spacing:-.02em}
+  h1 span{color:var(--accent)}
+  .tagline{color:var(--muted);font-size:1.15rem;max-width:560px;margin:1rem auto 0}
+  .hero-links{margin-top:2rem;display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+  .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1.3rem;border-radius:10px;
+    font-weight:600;font-size:.95rem;border:1px solid var(--border);transition:.15s}
+  .btn:hover{border-color:var(--accent);transform:translateY(-2px)}
+  .btn.primary{background:var(--accent);color:#04121b;border-color:transparent}
+  .btn.primary:hover{filter:brightness(1.1)}
+
+  /* sections */
+  section{padding:3rem 0}
+  h2{font-size:1.6rem;margin-bottom:1.6rem;display:flex;align-items:center;gap:.7rem}
+  h2::before{content:'//';font-family:var(--mono);color:var(--accent);font-size:1.3rem}
+  .grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:1.2rem}
+  .card{background:var(--panel);border:1px solid var(--border);border-radius:14px;padding:1.5rem;
+    display:flex;flex-direction:column;gap:.7rem;transition:.15s}
+  .card:hover{border-color:var(--accent);transform:translateY(-3px)}
+  .card h3{font-size:1.15rem}
+  .card p{color:var(--muted);font-size:.95rem;flex:1}
+  .tags{display:flex;flex-wrap:wrap;gap:.45rem}
+  .tag{font-family:var(--mono);font-size:.72rem;color:var(--accent2);background:rgba(74,222,128,.08);
+    border:1px solid rgba(74,222,128,.25);border-radius:6px;padding:.2rem .55rem}
+  .card-links{display:flex;gap:1.1rem;font-size:.9rem;font-weight:600}
+  .card-links a:hover{text-decoration:underline}
+
+  /* skills */
+  .skills{display:flex;flex-wrap:wrap;gap:.6rem}
+  .skill{font-family:var(--mono);font-size:.85rem;border:1px solid var(--border);border-radius:10px;
+    padding:.55rem 1rem;transition:.15s}
+  .skill:hover{border-color:var(--accent);color:var(--accent)}
+
+  footer{border-top:1px solid var(--border);padding:2.5rem 0;margin-top:2rem;text-align:center;color:var(--muted);font-size:.9rem}
+  footer .heart{color:var(--accent)}
+</style>
+</head>
+<body>
+  <header class="wrap">
+    <span class="badge">&lt;/&gt; muhi.codes</span>
+    <h1>Hi, I'm Mudasir <span>_</span></h1>
+    <p class="tagline">BS Computer Science student at IIUI. I learn by shipping — every project here is deployed, tested, and open source.</p>
+    <div class="hero-links">
+      <a class="btn primary" href="https://github.com/muhammadmudasir-gif" target="_blank" rel="noopener">GitHub</a>
+      <a class="btn" href="https://www.linkedin.com/in/muhammad-mudasir-0346b5349/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn" href="https://www.instagram.com/muhi_codes/" target="_blank" rel="noopener">Instagram</a>
+    </div>
+  </header>
+
+  <section class="wrap" id="projects">
+    <h2>Projects</h2>
+    <div class="grid">
+      <article class="card">
+        <h3>Algorithm Visualizer</h3>
+        <p>Watch sorting algorithms think. Animated, step-by-step visualization of Bubble, Selection &amp; Insertion sort — speed control included.</p>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">Canvas API</span><span class="tag">CSS</span></div>
+        <div class="card-links">
+          <a href="https://muhammadmudasir-gif.github.io/algorithm-visualizer/" target="_blank" rel="noopener">Live ↗</a>
+          <a href="https://github.com/muhammadmudasir-gif/algorithm-visualizer" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>CGPA Planner</h3>
+        <p>Plan your semester against the IIUI grading scale — calculate your CGPA, set target grades, and see exactly what each course needs.</p>
+        <div class="tags"><span class="tag">JavaScript</span><span class="tag">localStorage</span><span class="tag">Responsive</span></div>
+        <div class="card-links">
+          <a href="https://muhammadmudasir-gif.github.io/cgpa-planner/" target="_blank" rel="noopener">Live ↗</a>
+          <a href="https://github.com/muhammadmudasir-gif/cgpa-planner" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+      </article>
+
+      <article class="card">
+        <h3>Expense Tracker</h3>
+        <p>A private, zero-dependency expense tracker with a hand-rolled Canvas donut chart. Your data never leaves your browser.</p>
+        <div class="tags"><span class="tag">Vanilla JS</span><span class="tag">Canvas API</span><span class="tag">localStorage</span></div>
+        <div class="card-links">
+          <a href="https://muhammadmudasir-gif.github.io/expense-tracker/" target="_blank" rel="noopener">Live ↗</a>
+          <a href="https://github.com/muhammadmudasir-gif/expense-tracker" target="_blank" rel="noopener">Code ↗</a>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section class="wrap" id="skills">
+    <h2>Skills</h2>
+    <div class="skills">
+      <span class="skill">JavaScript</span><span class="skill">HTML5</span><span class="skill">CSS3</span>
+      <span class="skill">C++</span><span class="skill">Data Structures &amp; Algorithms</span>
+      <span class="skill">Git &amp; GitHub</span><span class="skill">Problem Solving</span>
+    </div>
+  </section>
+
+  <footer>
+    <p>Built in public <span class="heart">•</span> © <span id="year">2026</span> Mudasir <span class="heart">•</span> muhammadmudasir-gif.github.io</p>
+  </footer>
+
+<script>
+  document.getElementById('year').textContent = new Date().getFullYear();
+  // blinking cursor
+  setInterval(()=>{const c=document.querySelector('h1 span');c.style.opacity=c.style.opacity==='0'?'1':'0';},600);
+</script>
+</body>
+</html>
